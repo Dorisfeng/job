@@ -152,7 +152,7 @@ body{
    padding-top:10px;
 
 }
-.process .content .line{
+.process .wrapper .line{
     width:calc(100% - 170px);
     height:1px;
     background:#000000;
