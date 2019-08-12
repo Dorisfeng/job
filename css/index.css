@@ -122,7 +122,7 @@ body{
 .process{
     padding:0 30px 50px 30px;
 }
-.process .content{
+.process .wrapper{
     position: relative;
     box-sizing: border-box;
  
