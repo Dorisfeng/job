@@ -1,0 +1,259 @@
+body,div,ul,li,p{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	text-align: center;
+}
+.container{
+	width: 100%;
+	min-width: 100px;
+	margin: 0px auto;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	position: relative;
+	text-align: left;	
+	color: #000000;
+}
+.banner>img{
+	display: block;
+	width: 100%;
+}
+.nav{
+	width: 70%;
+	margin: 0px auto;		
+	overflow: hidden;
+}
+.logo{
+	margin-top: 12px;
+}
+.nav ul{
+	width: 45%;
+	float: right;
+	
+}
+.nav ul li{
+	float: left;
+	width: 30%;
+	margin: 0 auto;
+	height: 84px;
+	line-height: 84px;
+	list-style: none;
+	text-align: center;
+	margin-right: 2%;
+}
+.nav ul li a{
+	display: block;
+	margin: 0 auto;
+	height: 84px;
+	line-height: 84px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #FFFFFF;
+	background: url(../images/nav_bg_01.png) no-repeat center;	
+}
+.nav ul li a:hover{	
+	cursor: pointer;
+	background: url(../images/nav_bg.png) no-repeat center;
+}
+.active{
+	cursor: pointer;
+	background: url(../images/nav_bg.png) no-repeat center !important;
+}	
+/*公司简介*/
+.content1{
+	width: 70%;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(6,0,1,0.2);
+	margin-top: 50px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.intro{
+	color: #171717;
+	line-height: 35px;
+	text-indent: 2em;
+}
+.line{
+	height: 1px;
+	background: #bed0da;
+	margin: 20px 0;
+}
+.intro a{
+	color: #171717;
+}
+.intro a:hover{
+	text-decoration: underline;	
+}
+
+/*宣讲会日程*/
+.content2{
+	width: 70%;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(6,0,1,0.2);
+	margin-top: 50px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	display: none;
+}
+.schedule{
+    padding-left: 30px;
+    margin-bottom:24px;
+}
+
+.schedule_item {
+	color: #171717;
+	font-size: 14px;
+	line-height: 45px;
+    padding-bottom:5px;
+    border-bottom: 1px solid #d4e0e7;
+}
+
+.schedule_item img{
+    vertical-align: middle;
+    margin-right:15px;
+} 
+.company{
+    padding: 30px ;
+   
+}
+/*招聘流程*/
+.process{
+    padding:0 30px 50px 30px;
+}
+.process .content{
+    position: relative;
+    box-sizing: border-box;
+ 
+}
+.process .timeline {
+    display: flex;
+    justify-content: space-between;
+    margin:0 50px;
+}
+.process .timeline .timeline-item{
+    text-align: center;
+}
+.process .timeline .clock{
+    padding:10px;
+    border-radius: 50%;
+    background: #286385;
+    display: inline-block;
+}
+.process .timeline .clock img{
+    width:25px;
+}
+.process .timeline .text{
+   color:#000;
+   font-weight:500;
+   font-size:14px;
+   line-height: 1.5;
+   padding-top:10px;
+
+}
+.process .content .line{
+    width:calc(100% - 170px);
+    height:1px;
+    background:#000000;
+    position: absolute;
+    box-sizing: border-box;
+    z-index:-1;
+    left:50%;
+    transform: translateX(-50%)
+}
+
+
+/*岗位介绍*/
+.content3{
+	width: 70%;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(6,0,1,0.2);
+	margin-top: 50px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	display: none;
+}
+
+.content3 .job{
+	padding-left: 30px;
+}
+.content3 .job_title{
+	color: #286385;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 35px;
+}
+.content3 .job_title span{
+    font-size: 20px;
+	margin-right: 10px;
+}
+.content3 .job_des{
+	font-size: 14px;
+	color: #171717;
+	line-height: 35px;
+    letter-spacing: 2.8px;
+    margin-left:25px;
+    display: flex;
+    margin-right:80px;
+}
+.content3 .job_des .icon{
+	color: #93b1c2;
+	font-size: 16px;
+    margin-right: 10px;
+}
+
+.content3 .job_des .title,.content3 .job_des .detail{
+    font-size: 14px;
+	color: #171717;
+    line-height: 35px;
+}
+.content3 .job_des .detail{
+    flex:1
+}
+.content3 .job_des .detail p{
+    clear: both;
+}
+
+.content3 .address{
+	font-size: 14px;
+	color: #171717;
+	text-indent: 2em;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+    margin-right:50px;
+    
+}
+.content3 .address .right{
+    flex:1;
+    border-bottom:1px solid #0070b4;
+    display: flex;
+    justify-content: space-between;
+    text-align:start;
+    text-indent: 0
+}
+.content3 .address .icon{
+	color: #93b1c2;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.content3 .address .applyBtn{
+	padding:0rem 1.2rem;
+	background: #286385;
+	color: #FFFFFF;
+    font-weight: bold
+}
+/*版权*/
+.footer{
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	font-size: 12px;
+	color: #286385;
+    letter-spacing: 1px;
+    font-weight:bold;
+}
