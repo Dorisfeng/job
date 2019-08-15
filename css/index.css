@@ -248,12 +248,7 @@ body{
 /*版权*/
 .footer{
 	width: 100%;
-	margin: 0px auto;
-	text-align: center;
-	height: 100px;
-	line-height: 100px;
-	font-size: 12px;
-	color: #286385;
-    letter-spacing: 1px;
-    font-weight:bold;
+    margin: 30px auto 25px;
+    text-align: center;
+    color:#808080
 }
