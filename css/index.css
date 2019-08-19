@@ -248,7 +248,7 @@ body{
 /*版权*/
 .footer{
 	width: 100%;
-    margin: 30px auto 25px;
+    /* margin: 30px auto 25px; */
     text-align: center;
     color:#808080
 }
