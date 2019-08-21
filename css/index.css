@@ -20,7 +20,7 @@ body{
 	width: 100%;
 }
 .nav{
-	width: 70%;
+	width: 75%;
 	margin: 0px auto;		
 	overflow: hidden;
 }
@@ -28,12 +28,13 @@ body{
 	margin-top: 12px;
 }
 .nav ul{
-	width: 45%;
-	float: right;
+	width: 55%;
+    float: right;
+    display: flex;
+    justify-content: space-between
 	
 }
-.nav ul li{
-	float: left;
+ .nav ul li{
 	width: 30%;
 	margin: 0 auto;
 	height: 84px;
@@ -41,7 +42,7 @@ body{
 	list-style: none;
 	text-align: center;
 	margin-right: 2%;
-}
+} 
 .nav ul li a{
 	display: block;
 	margin: 0 auto;
@@ -54,22 +55,45 @@ body{
 }
 .nav ul li a:hover{	
 	cursor: pointer;
-	background: url(../images/nav_bg.png) no-repeat center;
+	/* background: url(../images/nav_bg.png) no-repeat center; */
 }
 .active{
 	cursor: pointer;
 	background: url(../images/nav_bg.png) no-repeat center !important;
-}	
-/*公司简介*/
-.content1{
-	width: 70%;
+}
+
+.content>div{
+    width: 70%;
 	margin: 0 auto;
 	box-shadow: 0 0 10px rgba(6,0,1,0.2);
 	margin-top: 50px;
 	border-radius: 10px;
-	-webkit-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: none;
+    padding: 30px;
 }
+/* .content>div:first-child{
+    display:block
+} */
 
+
+.sub-title{
+    height: 58px;
+    background: url(../images/titlebg.png) no-repeat left bottom;
+    margin-bottom:30px;
+    position: relative;
+    
+}
+.sub-title>span{
+    color:#fff;
+    font-size:24px;
+    position: absolute;
+    bottom:6px;
+    left:20px;
+    font-family: Adobe 黑体 Std
+    
+}
+/*公司简介*/
 .intro{
 	color: #171717;
 	line-height: 35px;
@@ -87,20 +111,29 @@ body{
 	text-decoration: underline;	
 }
 
-/*宣讲会日程*/
-.content2{
-	width: 70%;
-	margin: 0 auto;
-	box-shadow: 0 0 10px rgba(6,0,1,0.2);
-	margin-top: 50px;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	display: none;
+/* 职业发展 */
+.development{
+    color: #171717
 }
-.schedule{
-    padding-left: 30px;
-    margin-bottom:30px;
+.development>.career>ul{
+    list-style:disc;
+	line-height: 35px;
+    padding-left:5em
+    
 }
+.development>.career>ul>li>ul{
+    padding-left:3em;
+    list-style:circle;
+}
+.development>.welfare>ul{
+    line-height: 35px;
+    padding-left:3em;
+}
+.development>.welfare>ul .h-line{
+   padding-right:1em
+}
+
+/*招聘日程*/
 
 .schedule_item {
 	color: #171717;
@@ -114,81 +147,79 @@ body{
     vertical-align: middle;
     margin-right:15px;
 } 
-.company{
-    padding: 30px ;
-   
-}
-/*招聘流程*/
-.process{
-    padding:0 30px 50px 30px;
-}
-.process .wrapper{
+.process {
     position: relative;
-    box-sizing: border-box;
- 
+    z-index:2
 }
-.process .timeline {
+.process  .v-line{
+    position: absolute;
+    left:calc(2em + 18px);
+    top:3em;
+    bottom:3em;
+    width:2px;
+    background-color:#286385;
+    z-index:-1
+}
+.timeline{
+    padding: 1em 2em;
+  
+}
+
+.process .timeline .point{
     display: flex;
-    justify-content: space-between;
-    margin:0 50px;
+    justify-content: flex-start;
 }
-.process .timeline .timeline-item{
-    text-align: center;
-}
-.process .timeline .clock{
-    padding:10px;
+.process .timeline .point .clock{
+    padding:8px;
     border-radius: 50%;
     background: #286385;
     display: inline-block;
 }
 .process .timeline .clock img{
-    width:25px;
+    width:20px;
 }
-.process .timeline .text{
+.process .timeline .point .title{
+    padding-left:1em;
    color:#000;
    font-weight:500;
-   font-size:14px;
-   line-height: 1.5;
-   padding-top:10px;
+   font-size:18px;
+    line-height: 36px;
+}
+.process .timeline .process_item>img{
+    height:20px;
+    width:20px;
+    margin-right:10px;
+    vertical-align: middle
+   
+}
+.process .timeline  .process-content{
+    padding:1em 3em;
 
 }
-.process .wrapper .line{
-    width:calc(100% - 170px);
-    height:1px;
-    background:#000000;
-    position: absolute;
-    box-sizing: border-box;
-    z-index:-1;
-    left:50%;
-    transform: translateX(-50%)
+.process .timeline  .process-content .process_item:nth-child(2n){
+    margin-bottom:.5em
+}
+.process .timeline  .process_item{
+   line-height: 25px;
 }
 
 
 /*岗位介绍*/
-.content3{
-	width: 70%;
-	margin: 0 auto;
-	box-shadow: 0 0 10px rgba(6,0,1,0.2);
-	margin-top: 50px;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	display: none;
-}
 
-.content3 .job{
+.position-intro .job{
 	padding-left: 30px;
 }
-.content3 .job_title{
+.position-intro .job_title{
 	color: #286385;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 35px;
 }
-.content3 .job_title span{
+.position-intro .job_title span{
     font-size: 20px;
 	margin-right: 10px;
 }
-.content3 .job_des{
+.position-intro .job_des{
 	font-size: 14px;
 	color: #171717;
 	line-height: 35px;
@@ -197,25 +228,25 @@ body{
     display: flex;
     margin-right:80px;
 }
-.content3 .job_des .icon{
+.position-intro .job_des .icon{
 	color: #93b1c2;
 	font-size: 16px;
     margin-right: 10px;
 }
 
-.content3 .job_des .title,.content3 .job_des .detail{
+.position-intro .job_des .title,.position-intro .job_des .detail{
     font-size: 14px;
 	color: #171717;
     line-height: 35px;
 }
-.content3 .job_des .detail{
+.position-intro .job_des .detail{
     flex:1
 }
-.content3 .job_des .detail p{
+.position-intro .job_des .detail p{
     clear: both;
 }
 
-.content3 .address{
+.position-intro .address{
 	font-size: 14px;
 	color: #171717;
 	text-indent: 2em;
@@ -226,7 +257,7 @@ body{
     margin-right:50px;
     
 }
-.content3 .address .right{
+.position-intro .address .right{
     flex:1;
     border-bottom:1px solid #0070b4;
     display: flex;
@@ -234,12 +265,12 @@ body{
     text-align:start;
     text-indent: 0
 }
-.content3 .address .icon{
+.position-intro .address .icon{
 	color: #93b1c2;
 	font-size: 16px;
 	margin-right: 10px;
 }
-.content3 .address .applyBtn{
+.position-intro .address .applyBtn{
 	padding:0rem 1.2rem;
 	background: #286385;
 	color: #FFFFFF;
@@ -248,7 +279,7 @@ body{
 /*版权*/
 .footer{
 	width: 100%;
-    /* margin: 30px auto 25px; */
+    margin: 30px auto 25px;
     text-align: center;
-    color:#808080
+    color:#bbb
 }
