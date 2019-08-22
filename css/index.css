@@ -18,7 +18,7 @@ body{
 .banner{
     width:100%;
     height:360px;
-    background:url(../images/banner.png)  no-repeat;
+    background:url(../images/banner.jpg)  no-repeat;
     background-size:100%
 }
 .nav{
@@ -45,22 +45,24 @@ body{
 	margin: 0 auto;
 	height: 84px;
     text-align: center;
-    background: url(../images/nav_bg_01.png) no-repeat center;	
-} 
-.nav ul li a{
-	display: block;
-	margin: 0 auto;
-	text-decoration: none;
-	font-size: 16px;
+    background: url(../images/nav_bg_01.png) center/ 100%  no-repeat;	
+    font-size: 16px;
     color: #FFFFFF;
     line-height: 84px;
     cursor: pointer;
+
+} 
+/* .nav ul li a{
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
+	
     
-}
+} */
 
 .active{
 	cursor: pointer;
-	background: url(../images/nav_bg.png) no-repeat center !important;
+	background: url(../images/nav_bg.png)  center / 100% no-repeat !important;
 }
 
 .content>div{
@@ -138,6 +140,16 @@ body{
 }
 .salary>.welfare>ul .h-line{
    padding-right:1em
+}
+
+.QRCode{
+    display: inline-block;
+    text-indent: 2em;
+    text-align: center;
+    margin-bottom:.8em;
+}
+.QRCode>img{
+    height:100px;
 }
 
 /*招聘日程*/
