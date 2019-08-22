@@ -128,19 +128,23 @@ body{
     height:2.0em;
     vertical-align: middle;
     margin-right:1em;
+    
 }
 .development>.career>ul>li>ul{
-    padding-left:3em;
+    padding-left:5em;
     list-style:disc;
+  
 }
+.development>.career>ul>li, .salary>.welfare>ul>li{
+    line-height:3
+}
+
 .salary>.welfare>ul{
     line-height: 35px;
-    padding-left:3em;
+    padding-left:4em;
     list-style:disc;
 }
-.salary>.welfare>ul .h-line{
-   padding-right:1em
-}
+
 
 .QRCode{
     display: inline-block;
