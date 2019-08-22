@@ -328,21 +328,24 @@ body{
     }
     .nav{
         width:95%;
+        
     }
     .nav .logo{
-        width:20%
+        width:18%;
     }
     .nav ul{
-        width:78%
+        width:80%
     }
     .nav ul li {
-        font-size:12px;
+        font-size:10px;
     }
     .footer{
         font-size:12px;
+        margin:2em auto 1.5em;
     }
     .content>div{
-        width: 90%;
+        width: 100%;
+        box-sizing: border-box;
         margin-top: 20px;
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -362,14 +365,25 @@ body{
     .position-intro .job{
         padding-left:1em
     }
-    .position-intro .job_des{
-        margin-right:20px;
+    .position-intro .job_des,.position-intro .address{
+        margin-right:5px;
     }
     .development>.career>ul img{
         height:1.5em;
         margin-right:0;
     }
+    
     .development>.career>ul>li{
         text-indent: 2em
+    }
+    .development>.career>ul>li>ul,.salary>.welfare>ul{
+        padding-left: 5em
+    }
+    .position-intro .job_title span{
+        font-size:16px;
+    }
+    .position-intro .job_des .icon{
+        font-size:14px;
+       
     }
  }
