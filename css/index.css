@@ -211,7 +211,7 @@ body{
    
 }
 .process .timeline  .process-content{
-    padding:1em 0 1em 3em;
+    padding:1em 0 1em 4em;
 
 }
 .process .timeline  .process-content .process_item:nth-child(2n){
@@ -363,7 +363,21 @@ body{
         padding-left:1em
     }
     .position-intro .job_des,.position-intro .address{
-        margin-right:5px;
+        margin-right:0px;
+        line-height: 30px;
+    }
+    .position-intro .job_title span{
+        font-size:16px;
+    }
+    .position-intro .job_des{
+        margin-left: 15px;
+    }
+    .position-intro .job_des .icon{
+        font-size:14px;
+    }
+    .position-intro .address{
+        margin-bottom:20px;
+        margin-top:5px;
     }
     .development>.career>ul img,.salary>.welfare img{
         height:1.5em;
@@ -377,15 +391,7 @@ body{
         padding-left: 4em;
         line-height: 30px;
     }
-    .position-intro .job_title span{
-        font-size:16px;
-    }
-    .position-intro .job_des{
-        margin-left: 15px;
-    }
-    .position-intro .job_des .icon{
-        font-size:14px;
-    }
+   
     .intro,  .salary>.welfare>ul>li,.position-intro .job_des .title, .position-intro .job_des .detail{
         line-height: 30px;
     }
