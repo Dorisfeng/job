@@ -10,7 +10,6 @@ body{
 	width: 100%;
 	min-width: 100px;
 	margin: 0px auto;
-	
 	font-size: 14px;
 	position: relative;
 	text-align: left;	
@@ -315,7 +314,8 @@ body{
         flex-direction: column;
     }
     .container{
-        flex:1
+        flex:1;
+        font-size: 12px;
     }
     .banner{
         /* height:130px; */
@@ -385,7 +385,6 @@ body{
     }
     .position-intro .job_des .icon{
         font-size:14px;
-       
     }
     .intro,  .salary>.welfare>ul>li,.position-intro .job_des .title, .position-intro .job_des .detail{
         line-height: 30px;
