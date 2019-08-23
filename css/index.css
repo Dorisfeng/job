@@ -117,7 +117,7 @@ body{
     text-indent:3em
     
 }
-.development>.career>ul img{
+.development>.career>ul img,.salary>.welfare img{
     height:2.0em;
     vertical-align: middle;
     margin-right:1em;
@@ -129,24 +129,17 @@ body{
   
 }
 .development>.career>ul>li>ul>li{
-    text-indent: 1em
+    text-indent: 1em;
+    line-height:35px
 }
 .development>.career>ul>li, .salary>.welfare>ul>li{
-    line-height:3
+    line-height:35px
 }
 
 .salary>.welfare>ul{
-    line-height: 35px;
     padding-left:6em;
     list-style:disc ;
     text-indent: 1em
-}
-
-.salary>.welfare img{
-    height:2.0em;
-    vertical-align: middle;
-    margin-right:1em; 
-    margin-left:1em
 }
 
 .QRCode{
@@ -229,7 +222,8 @@ body{
    line-height: 25px;
 }
 .process .note{
-    color:#286285
+    color:#286285;
+    line-height: 1.5
 }
 
 /*岗位介绍*/
@@ -360,7 +354,8 @@ body{
         font-size: 18px
     }
     .development>.career>ul{
-        text-indent: 2em
+        text-indent: 2em;
+        line-height: 30px;
     }
     .position-intro .job{
         padding-left:1em
@@ -368,7 +363,7 @@ body{
     .position-intro .job_des,.position-intro .address{
         margin-right:5px;
     }
-    .development>.career>ul img{
+    .development>.career>ul img,.salary>.welfare img{
         height:1.5em;
         margin-right:0;
     }
@@ -377,13 +372,19 @@ body{
         text-indent: 2em
     }
     .development>.career>ul>li>ul,.salary>.welfare>ul{
-        padding-left: 5em
+        padding-left: 5em;
+        line-height: 30px;
     }
     .position-intro .job_title span{
         font-size:16px;
+    }
+    .position-intro .job_des{
+        margin-left: 15px;
     }
     .position-intro .job_des .icon{
         font-size:14px;
        
     }
- }
+    .intro,  .salary>.welfare>ul>li,.position-intro .job_des .title, .position-intro .job_des .detail{
+        line-height: 30px;
+    }
