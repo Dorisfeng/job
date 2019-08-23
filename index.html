@@ -9,23 +9,28 @@
 		<meta content="人才，招聘，简历，工作，求职，面试，应聘，跳槽，高薪，兼职，猎头，薪酬，薪资，培训，测评，人事" name="keywords">
 		<link rel="stylesheet" type="text/css" href="./css/global.css">
         <link rel="stylesheet" type="text/css" href="./css/index.css">
-        
+        <link rel="stylesheet" href="./css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     </head>
 
-	<script src="./js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+
 	<body>
-		<div class="container">								
-			<div class="nav">
-                <img class="logo" src="./images/logo.png">
-				<ul>           
-                    <li class="active">公司简介</li>
-                    <li>职业发展</li>
-                    <li>薪资福利</li>
-					<li>招聘日程</li>
-					<li>招聘岗位</li>
-				</ul>
-			</div>
+        
+		<div class="my-container">	
+            <div class="row no-gutter  header">
+                <div class="col-xs-12 col-md-4"><img class="logo" src="./images/logo.png"></div>
+                <div class="col-xs-12 col-md-8">
+                    <ul>           
+                        <li class="active">公司简介</li>
+                        <li>职业发展</li>
+                        <li>薪资福利</li>
+                        <li>招聘日程</li>
+                        <li>招聘岗位</li>
+                    </ul>
+                </div>
+            </div>		
 			<div class="banner">
 				<!-- <img src="./images/banner.jpg"> -->
 			</div>	
@@ -51,16 +56,17 @@
                             泛林集团长期致力于支持半导体产业的人才培养。在中国，泛林集团与国内半导体领域的数所顶尖大学建立了合作关系。通过设立“泛林集团微电子论文奖"、资助学生研发项目以及捐赠设备等方法，鼓励大学生积极投身于微电子和集成电路产业，为产业培养更多优秀人才。截至2018年底，泛林集团已累计向国内的8所重点大学捐赠约590万美元。
                     </p>
                         <p class="line"></p>
-                        <figure class='QRCode'>
-                            <img  src="./images/ewm.jpeg"  >
-                            <figcaption >
-                                欢迎关注泛林集团微信公众号
-                            </figcaption>
-                        </figure>
-                        
-                       
-                        <p class="intro">公司官网：<a href="http://www.lamresearch.com" target="_blank">www.lamresearch.com</a></p>
-                        <p class="intro">联络邮箱：chinacampus@lamresearch.com</p>       	
+                        <div class='company-link'>
+                            <figure class='QRCode'>
+                                <img  src="./images/ewm.jpeg"  >
+                                <figcaption >
+                                    欢迎关注泛林集团微信公众号
+                                </figcaption>
+                            </figure>
+                            <p class="intro">公司官网：<a href="http://www.lamresearch.com" target="_blank">www.lamresearch.com</a></p>
+                            <p class="intro">联络邮箱：chinacampus@lamresearch.com</p>     
+                        </div>
+                          	
                 </div>
                 <!--职业发展-->
                 <div class='development'  >
@@ -181,49 +187,56 @@
                 </div>													
 				
 				<!--岗位介绍-->
-				<div class="position-intro"  >	
+				<div class="position-intro"  style='display: block' >	
 					<div class="company">
                         <p class='sub-title'><span>招聘岗位</span></p>	
 						<div class="job">
                             <p class="job_title">
                                     <span>▶</span>Field Process Engineer (工艺制程工程师)
                                 </p>
-                                <div class="job_des">
-                                    <b class='title' > <span class='icon'>▶</span>职位描述：</b>
-                                    <p class='detail'>最前沿的半导体工艺研发（刻蚀/薄膜沉积/清洗）以实现芯片制造和产能的需求。</p>
+                                <div class="job_des row no-gutter ">
+                                    <div class="col-xs-12 col-sm-3 col-md-2"><b class='title' > <span class='icon'>▶</span>职位描述：</b></div>
+                                    <div class="col-xs-12 col-sm-9 col-md-10">   <div class='detail'>最前沿的半导体工艺研发（刻蚀/薄膜沉积/清洗）以实现芯片制造和产能的需求。</div></div>
                                 </div>
-                                <div class="job_des">
-                                    <b class='title'><span  class='icon'>▶</span>职位要求：</b>
-                                    <div class='detail'>
-                                        <p>微电子、材料、物理、化学等相关专业2020届硕士或博士毕业生；</p>
-                                        <p >英语流利或韩语流利（英语、韩语双语流利者优先）；</p>
-                                        <p >有持续学习的热情和能力；</p>
-                                        <p >有良好的沟通和团队合作能力。</p>
-                                    </div>
+                                <div class="job_des row no-gutter ">
+                                        <div class="col-xs-12 col-sm-3 col-md-2">
+                                            <b class='title'><span  class='icon'>▶</span>职位要求：</b>
+                                        </div>
+                                        <div class="col-xs-12 col-md-9 col-md-10">
+                                            <div class='detail'>
+                                                <p>微电子、材料、物理、化学等相关专业2020届硕士或博士毕业生；</p>
+                                                <p >英语流利或韩语流利（英语、韩语双语流利者优先）；</p>
+                                                <p >有持续学习的热情和能力；</p>
+                                                <p >有良好的沟通和团队合作能力。</p>
+                                            </div>
+                                        </div>
                                 </div>
                            
                             <div class="address">
                                <span class='icon'>▶</span> 
-                               <span class='right'><b>工作地点：武汉</b>
-                                <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=106867819&amp;ctmid=4107931" target="_blank">申请职位</a>
+                               <span class='right'>
+                                   <b>工作地点：武汉</b>
+                                   <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=116407266&amp;ctmid=4512308" target="_blank">申请职位</a>
                               </span>
                             </div>
                             <div class="address">
                                 <span class='icon'>▶</span> 
-                                <span class='right'><b>工作地点：成都</b>
-                                    <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=106867819&amp;ctmid=4107931" target="_blank">申请职位</a>
+                                <span class='right'>
+                                    <b>工作地点：成都</b>
+                                    <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=116407408&amp;ctmid=4512308" target="_blank">申请职位</a>
                                 </span>
                             </div>
                             <div class="address">
                                 <span class='icon'>▶</span> 
-                                <span class='right'><b>工作地点：合肥</b>
-                                    <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=106867819&amp;ctmid=4107931" target="_blank">申请职位</a>
+                                <span class='right'>
+                                    <b>工作地点：合肥</b>
+                                    <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=116407528&amp;ctmid=4512308" target="_blank">申请职位</a>
                                 </span>
                             </div>
                             <div class="address">
                                 <span class='icon'>▶</span> 
                                 <span class='right'><b>工作地点：大连</b>
-                                    <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=106867819&amp;ctmid=4107931" target="_blank">申请职位</a>
+                                    <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=116407703&amp;ctmid=4512308" target="_blank">申请职位</a>
                                 </span>
                             </div>
                         </div>
@@ -231,30 +244,41 @@
                             <p class="job_title">
                                     <span>▶</span>Field Service Engineer (客户服务工程师)
                                 </p>
-                                <div class="job_des">
-                                    <b class='title' > <span class='icon'>▶</span>职位描述：</b>
-                                    <p class='detail'>最前沿的半导体设备设定和维护（刻蚀/薄膜沉积/清洗）以实现芯片制造和产能的需求。</p>
+                                <div class="job_des row no-gutter">
+                                        <div class="col-xs-12 col-sm-3 col-md-2 ">
+                                            <b class='title' > <span class='icon'>▶</span>职位描述：</b>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9 col-md-10 ">
+                                                <p class='detail'>最前沿的半导体设备设定和维护（刻蚀/薄膜沉积/清洗）以实现芯片制造和产能的需求。</p>
+                                        </div>
+                                    
+                                  
                                 </div>
-                                <div class="job_des">
-                                    <b class='title'><span  class='icon'>▶</span>职位要求：</b>
-                                    <div class='detail'>
-                                        <p>电子工程、自动化、微电子等相关专业2020届本科毕业生；</p>
-                                        <p > 英语流利；</p>
-                                        <p >有持续学习的热情和能力；</p>
-                                        <p > 有良好的沟通和团队合作能力。</p>
-                                    </div>
+                                <div class="job_des row no-gutter">
+                                        <div class="col-xs-12 col-sm-3 col-md-2">
+                                            <b class='title'><span  class='icon'>▶</span>职位要求：</b>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9 col-md-10">
+                                            <div class='detail'>
+                                                <p>电子工程、自动化、微电子等相关专业2020届本科毕业生；</p>
+                                                <p > 英语流利；</p>
+                                                <p >有持续学习的热情和能力；</p>
+                                                <p > 有良好的沟通和团队合作能力。</p>
+                                            </div>
+                                        </div>
                                 </div>
-                            
                             <div class="address">
                                 <span class='icon'>▶</span> 
-                                <span class='right'><b>工作地点：武汉</b>
-                                <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=106867819&amp;ctmid=4107931" target="_blank">申请职位</a>
+                                <span class='right'>
+                                    <b>工作地点：武汉</b>
+                                     <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=116407845&amp;ctmid=4512308" target="_blank">申请职位</a>
                                 </span>
                             </div>
                             <div class="address">
                                 <span class='icon'>▶</span> 
-                                <span class='right'><b>工作地点：成都</b>
-                                    <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=106867819&amp;ctmid=4107931" target="_blank">申请职位</a>
+                                <span class='right'>
+                                    <b>工作地点：成都</b>
+                                    <a class="applyBtn" href="http://xyz.51job.com/external/apply.aspx?jobid=116407928&amp;ctmid=4512308" target="_blank">申请职位</a>
                                 </span>
                             </div>
                         </div>
