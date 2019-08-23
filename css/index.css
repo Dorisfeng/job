@@ -78,9 +78,9 @@ body{
     display: none;
     padding:30px;
 }
-/* .content>div:first-child{
+.content>div:first-child{
     display:block
-} */
+}
 
 
 .sub-title{
@@ -95,7 +95,7 @@ body{
     color:#fff;
     font-size:24px;
     position: absolute;
-    bottom:6px;
+    bottom:3px;
     left:15px;
     
 }
