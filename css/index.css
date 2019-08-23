@@ -347,11 +347,13 @@ body{
         padding:10px;
     }
     .sub-title{
-        height: 48px;
+        height: 40px;
         margin-bottom:20px;
     }
     .sub-title>span{
-        font-size: 18px
+        font-size: 16px;
+        left:10px;
+        bottom:5px;
     }
     .development>.career>ul{
         text-indent: 2em;
@@ -372,7 +374,7 @@ body{
         text-indent: 2em
     }
     .development>.career>ul>li>ul,.salary>.welfare>ul{
-        padding-left: 5em;
+        padding-left: 4em;
         line-height: 30px;
     }
     .position-intro .job_title span{
@@ -388,3 +390,10 @@ body{
     .intro,  .salary>.welfare>ul>li,.position-intro .job_des .title, .position-intro .job_des .detail{
         line-height: 30px;
     }
+    .process .timeline .clock img{
+        width:18px;
+    }
+    .process .timeline .point .title{
+        font-size:16px;
+    }
+}
