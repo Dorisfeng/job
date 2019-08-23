@@ -262,32 +262,22 @@ body{
 	line-height: 35px;
     letter-spacing: 2.8px;
     margin-left:25px;
-    /* display: flex; */
     margin-right:80px;
 }
-.position-intro .job_des .icon{
+.position-intro .job_des .icon,.position-intro .address .icon{
 	color: #93b1c2;
 	font-size: 16px;
     margin-right: 10px;
 }
-
 .position-intro .job_des .title,.position-intro .job_des .detail{
     font-size: 14px;
 	color: #171717;
     line-height: 35px;
 }
-.position-intro .job_des .detail{
-    /* flex:1 */
-    /* width:100%; */
-}
-.position-intro .job_des .detail p{
-    clear: both;
-}
-
 .position-intro .address{
 	font-size: 14px;
 	color: #171717;
-	text-indent: 2em;
+    margin-left:25px;
     line-height: 35px;
     display: flex;
     justify-content: space-between;
@@ -302,11 +292,6 @@ body{
     justify-content: space-between;
     text-align:start;
     text-indent: 0
-}
-.position-intro .address .icon{
-	color: #93b1c2;
-	font-size: 16px;
-	margin-right: 10px;
 }
 .position-intro .address .applyBtn{
 	padding:0rem 1.2rem;
@@ -336,18 +321,12 @@ body{
         flex:1;
         font-size: 12px;
     }
-    .banner{
-        /* min-height:130px; */
-    }
     .header{
         text-align: left;
     }
     .header .logo{
         margin-left:10%;
         height:50px;
-    }
-    .header ul{
-        /* margin:10px auto; */
     }
     .header ul li{
         width:18%;
@@ -362,7 +341,7 @@ body{
         line-height: 35px;
     }
     .content>div{
-        width: 100%;
+        width: 95%;
         box-sizing: border-box;
         margin-top: 20px;
         border-radius: 5px;
@@ -396,14 +375,12 @@ body{
     .position-intro .job_des,.position-intro .address{
         margin-right:0px;
         line-height: 30px;
+        margin-left: 15px;
     }
     .position-intro .job_title span{
         font-size:16px;
     }
-    .position-intro .job_des{
-        margin-left: 15px;
-    }
-    .position-intro .job_des .icon{
+    .position-intro .job_des .icon,.position-intro .address .icon{
         font-size:14px;
     }
     .position-intro .address{
