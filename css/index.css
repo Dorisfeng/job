@@ -183,7 +183,7 @@ body{
 }
 .process  .v-line{
     position: absolute;
-    left:calc(2em + 18px);
+    left:calc(1em + 18px);
     top:3em;
     bottom:3em;
     width:2px;
@@ -191,7 +191,7 @@ body{
     z-index:-1
 }
 .process .timeline{
-    padding: 1em 2em;
+    padding: 2em 0em 2em 1em;
   
 }
 
@@ -390,10 +390,14 @@ body{
         height:1.5em;
         margin-right:0;
     }
-    
+   
     .development>.career>ul>li{
         text-indent: 2em;
-        padding-left:1em;
+        /* padding-left:1em; */
+    }
+    .development>.career>ul>li>ul>li,.salary>.welfare>ul>li{
+        line-height: 30px;
+        text-indent: 0;
     }
     .development>.career>ul>li>ul,.salary>.welfare>ul{
         padding-left: 4em;
@@ -494,9 +498,8 @@ body{
         height:65px;
     }
     .page-header .navbar-toggle {
-        display: block;
+        display:block;
         border: 1px solid #425261;
-        cursor: pointer;
     }
 
     .page-header .navbar-collapse.collapse {
