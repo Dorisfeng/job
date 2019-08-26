@@ -29,7 +29,7 @@ body{
 }
 .banner{
     width:100%;
-    min-height: 360px;
+    min-height: 460px;
     background:url(../images/banner.jpg)  no-repeat center 0 ;
     background-size:cover;
 }
@@ -312,10 +312,11 @@ body{
     body{
         display: flex;
         min-width: auto;
-        flex-direction: column;
-        
+        flex-direction: column;  
     }
-
+    .banner{
+        min-height: 200px;
+    }
     .my_container{
         flex:1;
         font-size: 12px;
