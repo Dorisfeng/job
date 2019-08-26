@@ -510,6 +510,7 @@ body{
     .page-header .navbar-collapse.collapse.in {
         display: block !important;
         overflow-y: auto !important;
+        margin-bottom:10px;
     }
 
     .page-header .navbar-nav {
