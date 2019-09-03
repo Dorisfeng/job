@@ -3,40 +3,50 @@
     margin-left: 0;
     margin-right: 0;
 }
-.row.no-gutter > [class*='col-'] {
+
+.row.no-gutter>[class*='col-'] {
     padding-right: 0;
     padding-left: 0;
 }
 
-body,div,ul,li,p{
-	margin: 0px;
-	padding: 0px;
+body,
+div,
+ul,
+li,
+p {
+    margin: 0px;
+    padding: 0px;
 }
-body{
+
+body {
     text-align: center;
-    font-family: "微软雅黑";
     overflow: auto;
     min-width: 1300px;
+    font-family: 思源黑体;
 }
-.my-container{
-	width: 100%;
-	min-width: 100px;
-	margin: 0px auto;
-	font-size: 14px;
-	position: relative;
-	text-align: left;	
+
+.my-container {
+    width: 100%;
+    min-width: 100px;
+    margin: 0px auto;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
     color: #000000;
 }
-.banner{
-    width:100%;
+
+.banner {
+    width: 100%;
     min-height: 460px;
-    background:url(../images/banner.jpg)  no-repeat center 0 ;
-    background-size:cover;
+    background: url(../images/banner.jpg) no-repeat center 0;
+    background-size: cover;
 }
-.banner>img{
-    width:100%;
+
+.banner>img {
+    width: 100%;
 }
- /*.header{
+
+/*.header{
     overflow: hidden;
     padding-top:10px;
     box-sizing: border-box;
@@ -65,365 +75,434 @@ body{
 	background: url(../images/nav_bg.png)  center / 100%  no-repeat !important;
 } */
 
-.content>div{
+.content>div {
     width: 70%;
-	margin: 0 auto;
-	box-shadow: 0 0 10px rgba(6,0,1,0.2);
-	margin-top: 50px;
-	border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(6, 0, 1, 0.2);
+    margin-top: 50px;
+    border-radius: 10px;
     -webkit-border-radius: 10px;
     display: none;
-    padding:30px;
+    padding: 30px;
 }
-.content>div:first-child{
-    display:block
+
+.content>div:first-child {
+    display: block
 }
 
 
-.sub-title{
+.sub-title {
     height: 58px;
-    background: url(../images/titlebg.png) no-repeat ;
-    background-size:auto 100%;
-    margin-bottom:30px;
+    background: url(../images/titlebg.png) no-repeat;
+    background-size: auto 100%;
+    margin-bottom: 30px;
     position: relative;
-    
+
 }
-.sub-title>span{
-    color:#fff;
-    font-size:24px;
+
+.sub-title>span {
+    color: #fff;
+    font-size: 24px;
     position: absolute;
-    bottom:3px;
-    left:15px;
-    
+    bottom: 3px;
+    left: 15px;
+
 }
+
 /*公司简介*/
-.intro{
-	color: #171717;
-	line-height: 35px;
-	text-indent: 2em;
+.intro {
+    color: #171717;
+    line-height: 35px;
+    text-indent: 2em;
 }
+
 /* .line{
 	height: 1px;
 	background: #bed0da;
 	margin: 20px 0;
 } */
-.intro a{
-	color: #171717;
+.intro a {
+    color: #171717;
 }
-.intro a:hover{
-	text-decoration: underline;	
+
+.intro a:hover {
+    text-decoration: underline;
 }
-.company-link{
-    border-top:1px solid #bed0da;
-    margin-top:20px;
-    padding-top:20px;
+
+.company-link {
+    border-top: 1px solid #bed0da;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 /* 职业发展 */
-.development{
+.development {
     color: #171717
 }
-.development>.career>ul{
-    list-style:none;
-	line-height: 35px;
-    text-indent:3em
-    
-}
-.development>.career>ul img,.salary>.welfare img{
-    height:2.0em;
-    vertical-align: middle;
-    margin-right:1em;
-    
-}
-.development>.career>ul>li>ul{
-    padding-left:7em;
-    list-style:disc;
-  
-}
-.development>.career>ul>li>ul>li{
-    text-indent: 1em;
-    line-height:35px
-}
-.development>.career>ul>li, .salary>.welfare>ul>li{
-    line-height:35px
+
+.development>.career>ul {
+    list-style: none;
+    line-height: 35px;
+    text-indent: 3em
 }
 
-.salary>.welfare>ul{
-    padding-left:6em;
-    list-style:disc ;
+.development>.career>ul img,
+.salary>.welfare img {
+    height: 2.0em;
+    vertical-align: middle;
+    margin-right: 1em;
+
+}
+
+.development>.career>ul>li>ul {
+    padding-left: 7em;
+    list-style: disc;
+
+}
+
+.development>.career>ul>li>ul>li {
+    text-indent: 1em;
+    line-height: 35px
+}
+
+.development>.career>ul>li,
+.salary>.welfare>ul>li {
+    line-height: 35px
+}
+
+.salary>.welfare>ul {
+    padding-left: 6em;
+    list-style: disc;
     text-indent: 1em
 }
 
-.QRCode{
+.QRCode {
     display: inline-block;
     text-indent: 2em;
     text-align: center;
-    margin-bottom:.8em;
+    margin-bottom: .8em;
 }
-.QRCode>img{
-    height:100px;
+
+.QRCode>img {
+    height: 100px;
 }
 
 /*招聘日程*/
 .schedule_item {
-	color: #171717;
-	font-size: 14px;
-	line-height: 45px;
-    padding-bottom:5px;
+    color: #171717;
+    font-size: 14px;
+    line-height: 45px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #d4e0e7;
 }
 
-.schedule_item img{
+.schedule_item img {
     vertical-align: middle;
-    margin-right:15px;
-} 
-.process {
-    position: relative;
-    z-index:2
-}
-.process  .v-line{
-    position: absolute;
-    left:calc(1em + 18px);
-    top:3em;
-    bottom:3em;
-    width:2px;
-    background-color:#286385;
-    z-index:-1
-}
-.process .timeline{
-    padding: 2em 0em 2em 1em;
-  
+    margin-right: 15px;
 }
 
-.process .timeline .point{
+.process {
+    position: relative;
+    z-index: 2
+}
+
+.process .v-line {
+    position: absolute;
+    left: calc(1em + 18px);
+    top: 3em;
+    bottom: 3em;
+    width: 2px;
+    background-color: #286385;
+    z-index: -1
+}
+
+.process .timeline {
+    padding: 2em 0em 2em 1em;
+
+}
+
+.process .timeline .point {
     display: flex;
     justify-content: flex-start;
 }
-.process .timeline .point .clock{
-    padding:8px;
+
+.process .timeline .point .clock {
+    padding: 8px;
     border-radius: 50%;
     background: #286385;
     display: inline-block;
 }
-.process .timeline .clock img{
-    width:20px;
+
+.process .timeline .clock img {
+    width: 20px;
 }
-.process .timeline .point .title{
-    padding-left:1em;
-   color:#000;
-   font-weight:500;
-   font-size:18px;
-   line-height: 36px;
+
+.process .timeline .point .title {
+    padding-left: 1em;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
 
 }
-.process .timeline .process_item>img{
-    height:20px;
-    width:20px;
-    margin-right:10px;
+
+.process .timeline .process_item>img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
     vertical-align: middle
-   
 }
-.process .timeline  .process-content{
-    padding:1em 0 1em 4em;
+
+.process .timeline .process-content {
+    padding: 1em 0 1em 4em;
 
 }
-.process .timeline  .process-content .process_item:nth-child(2n){
-    margin-bottom:.5em
+
+.process .timeline .process-content .process_item:nth-child(2n) {
+    margin-bottom: .5em
 }
-.process .timeline  .process_item{
-   line-height: 25px;
+
+.process .timeline .process_item {
+    line-height: 25px;
 }
-.process .note{
-    color:#286285;
+
+.process .note {
+    color: #286285;
     line-height: 1.5
 }
 
 /*岗位介绍*/
 
-.position-intro .job{
-	padding-left: 2em;
+.position-intro .job {
+    padding-left: 2em;
 }
-.position-intro .job_title{
-	color: #286385;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 35px;
+
+.position-intro .job_title {
+    color: #286385;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 35px;
 }
-.position-intro .job_title span{
+
+.position-intro .job_title span {
     font-size: 20px;
-	margin-right: 10px;
-}
-.position-intro .job_des{
-	font-size: 14px;
-	color: #171717;
-	line-height: 35px;
-    letter-spacing: 2.8px;
-    margin-left:25px;
-    margin-right:80px;
-}
-.position-intro .job_des .icon,.position-intro .address .icon{
-	color: #93b1c2;
-	font-size: 16px;
     margin-right: 10px;
 }
-.position-intro .job_des .title,.position-intro .job_des .detail{
+
+.position-intro .job_des {
     font-size: 14px;
-	color: #171717;
+    color: #171717;
+    line-height: 35px;
+    letter-spacing: 2.8px;
+    margin-left: 25px;
+    margin-right: 80px;
+}
+
+.position-intro .job_des .icon,
+.position-intro .address .icon {
+    color: #93b1c2;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.position-intro .job_des .title,
+.position-intro .job_des .detail {
+    font-size: 14px;
+    color: #171717;
     line-height: 35px;
 }
-.position-intro .address{
-	font-size: 14px;
-	color: #171717;
-    margin-left:25px;
+
+.position-intro .address {
+    font-size: 14px;
+    color: #171717;
+    margin-left: 25px;
     line-height: 35px;
     display: flex;
     justify-content: space-between;
-    margin-bottom:30px;
-    margin-right:50px;
-    
+    margin-bottom: 30px;
+    margin-right: 50px;
+
 }
-.position-intro .address .right{
-    flex:1;
-    border-bottom:1px solid #0070b4;
+
+.position-intro .address .right {
+    flex: 1;
+    border-bottom: 1px solid #0070b4;
     display: flex;
     justify-content: space-between;
-    text-align:start;
+    text-align: start;
     text-indent: 0
 }
-.position-intro .address .applyBtn{
-	padding:0rem 1.2rem;
-	background: #286385;
-	color: #FFFFFF;
+
+.position-intro .address .applyBtn {
+    padding: 0rem 1.2rem;
+    background: #286385;
+    color: #FFFFFF;
     font-weight: bold
 }
+
 /*版权*/
-.footer{
+.footer {
     font-size: 14px;
-	width: 100%;
+    width: 100%;
     text-align: center;
-    color:#bbb;
-    height:50px;
+    color: #bbb;
+    height: 50px;
     line-height: 50px;
 }
 
 /*响应式*/
- 
-@media (max-width: 767px){
-    body{
+
+@media (max-width: 767px) {
+    body {
         display: flex;
         min-width: auto;
-        flex-direction: column;  
+        flex-direction: column;
     }
-    .banner{
+
+    .banner {
         min-height: 200px;
     }
-    .my_container{
-        flex:1;
+
+    .my_container {
+        flex: 1;
         font-size: 12px;
     }
-    .header{
+
+    .header {
         text-align: left;
     }
-    .header .logo{
-        margin-left:10%;
-        height:50px;
-    }
-    .header ul li{
-        width:18%;
-        height: 50px;
-        line-height:50px;
-        font-size:10px;
 
-    }  
-    .footer{
-        font-size:12px;
-        height:35px;
+    .header .logo {
+        margin-left: 10%;
+        height: 50px;
+    }
+
+    .header ul li {
+        width: 18%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 10px;
+
+    }
+
+    .footer {
+        font-size: 12px;
+        height: 35px;
         line-height: 35px;
     }
-    .content>div{
+
+    .content>div {
         width: 95%;
         box-sizing: border-box;
         margin-top: 20px;
         border-radius: 5px;
         -webkit-border-radius: 5px;
         display: none;
-        padding:10px;
+        padding: 10px;
     }
-    .sub-title{
+
+    .sub-title {
         height: 40px;
-        margin-bottom:20px;
+        margin-bottom: 20px;
     }
-    .sub-title>span{
+
+    .sub-title>span {
         font-size: 16px;
-        left:10px;
-        bottom:3px;
+        left: 10px;
+        bottom: 3px;
     }
+
     /*公司简介*/
-    .company-link{
+    .company-link {
         text-align: center;
     }
-    .company-link .QRCode,.company-link .intro{
+
+    .company-link .QRCode,
+    .company-link .intro {
         text-indent: 0
     }
-    .development>.career>ul{
+
+    .development>.career>ul {
         text-indent: 2em;
         line-height: 30px;
     }
-    .position-intro .job{
-        padding-left:1em
+
+    .position-intro .job {
+        padding-left: 1em
     }
-    .position-intro .job_des,.position-intro .address{
-        margin-right:0px;
+
+    .position-intro .job_des,
+    .position-intro .address {
+        margin-right: 0px;
         line-height: 30px;
         margin-left: 15px;
     }
-    .position-intro .job_title span{
-        font-size:16px;
+
+    .position-intro .job_title span {
+        font-size: 16px;
     }
-    .position-intro .job_des .icon,.position-intro .address .icon{
-        font-size:14px;
+
+    .position-intro .job_des .icon,
+    .position-intro .address .icon {
+        font-size: 14px;
     }
-    .position-intro .address{
-        margin-bottom:20px;
-        margin-top:5px;
+
+    .position-intro .address {
+        margin-bottom: 20px;
+        margin-top: 5px;
     }
-    .development>.career>ul img,.salary>.welfare img{
-        height:1.5em;
-        margin-right:0;
+
+    .development>.career>ul img,
+    .salary>.welfare img {
+        height: 1.5em;
+        margin-right: 0;
     }
-   
-    .development>.career>ul>li{
+
+    .development>.career>ul>li {
         text-indent: 2em;
         /* padding-left:1em; */
     }
-    .development>.career>ul>li>ul>li,.salary>.welfare>ul>li{
+
+    .development>.career>ul>li>ul>li,
+    .salary>.welfare>ul>li {
         line-height: 30px;
         text-indent: 0;
     }
-    .development>.career>ul>li>ul,.salary>.welfare>ul{
+
+    .development>.career>ul>li>ul,
+    .salary>.welfare>ul {
         padding-left: 4em;
         line-height: 30px;
     }
-    .position-intro .job_des .detail{
+
+    .position-intro .job_des .detail {
         /* margin-left:2em; */
         text-indent: 2em;
     }
-    .intro,  .salary>.welfare>ul>li,.position-intro .job_des .title, .position-intro .job_des .detail{
+
+    .intro,
+    .salary>.welfare>ul>li,
+    .position-intro .job_des .title,
+    .position-intro .job_des .detail {
         line-height: 30px;
-    
+
     }
-    .process .timeline .clock img{
-        width:18px;
+
+    .process .timeline .clock img {
+        width: 18px;
     }
-    .process .timeline .point .title{
-        font-size:16px;
+
+    .process .timeline .point .title {
+        font-size: 16px;
     }
 }
+
 /*nav*/
-.page-header{
-    border:none!important;
-    margin:0!important;
+.page-header {
+    border: none !important;
+    margin: 0 !important;
 }
+
 .page-header .navbar {
     border-radius: 0;
     margin-bottom: 0;
@@ -450,7 +529,7 @@ body{
     vertical-align: middle;
     transition-duration: 400ms;
     transition-property: all;
-    padding:10px;
+    padding: 10px;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
@@ -484,34 +563,37 @@ body{
 .page-header .navbar-nav li>a:focus,
 .page-header .navbar-nav li>a:hover {
     background: inherit;
-    
+
 }
 
 @media (max-width:767px) {
-    .page-header{
-        padding-bottom:0!important;
+    .page-header {
+        padding-bottom: 0 !important;
     }
+
     .page-header .navbar-header {
         float: none;
 
     }
-    .page-header .navbar-brand{
-        height:65px;
+
+    .page-header .navbar-brand {
+        height: 65px;
     }
+
     .page-header .navbar-toggle {
-        display:block;
+        display: block;
         border: 1px solid #425261;
     }
 
     .page-header .navbar-collapse.collapse {
         display: none !important;
-       
+
     }
 
     .page-header .navbar-collapse.collapse.in {
         display: block !important;
         overflow-y: auto !important;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
 
     .page-header .navbar-nav {
@@ -522,7 +604,7 @@ body{
     .page-header .navbar-nav>li {
         float: none;
     }
-  
+
     .page-header {
         background: #fff;
     }
@@ -555,28 +637,32 @@ body{
         font-weight: 700;
         color: #3f5263;
     }
-    .page-header .navbar-nav li{
-        padding:0;
+
+    .page-header .navbar-nav li {
+        padding: 0;
     }
+
     .page-header .navbar .navbar-collapse .navbar-nav li>a.active,
     .page-header .navbar .navbar-collapse .navbar-nav li>a:hover {
         color: #fff;
-        background-color:#5187A9
-    } 
+        background-color: #5187A9
+    }
+
     .page-header img.logo-default {
         display: none;
     }
 }
 
 @media (min-width: 768px) {
-    .container{
+    .container {
         /* width:70%; */
     }
+
     .page-header {
         top: 0;
         left: 0;
         width: 100%;
-        height: auto; 
+        height: auto;
     }
 
     .page-header .navbar-brand img.logo-scroll {
@@ -585,21 +671,25 @@ body{
 
     .page-header .navbar-nav {
         float: right;
-        width:70%;
+        width: 70%;
         display: flex;
         justify-content: space-between;
     }
+
     .page-header .navbar-nav li>a {
         padding: 15px 20px;
-        color:#fff;
+        color: #fff;
         font-weight: normal;
-        font-size:16px;
+        font-size: 16px;
         background: url('../images/nav_bg_01.png') no-repeat center/100% 100%;
     }
-    .page-header .navbar-nav li>a:focus, .page-header .navbar-nav li>a:hover{
-        background:url('../images/nav_bg_01.png') no-repeat center/100% 100%;
+
+    .page-header .navbar-nav li>a:focus,
+    .page-header .navbar-nav li>a:hover {
+        background: url('../images/nav_bg_01.png') no-repeat center/100% 100%;
     }
-    .page-header .navbar-nav li>a.active{
-        background:url('../images/nav_bg.png') no-repeat center/100% 100%;
+
+    .page-header .navbar-nav li>a.active {
+        background: url('../images/nav_bg.png') no-repeat center/100% 100%;
     }
 }
